@@ -1,15 +1,14 @@
 class Cereal
-  attr_accessor :name, :ounces, :calories, :shape
+  attr_accessor :name, :ounces, :calories
 
-  def initialize(name, ounces, calories, shape)
+  def initialize(name, ounces, calories)
     @name = name
     @ounces = ounces
     @calories = calories
-    @shape = shape
   end
 
   def to_s
-    "#{@name} #{@ounces} #{@calories} #{@shape}"
+    "#{@name} #{@ounces} #{@calories}"
   end
 
   def new
