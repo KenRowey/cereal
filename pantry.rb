@@ -1,4 +1,4 @@
-require_relative "flavor"
+require_relative "cereal"
 
 class Pantry
   def initialize
