@@ -4,6 +4,8 @@ User stories: As a daily breakfast cereal eater, I keep a lot of cereals options
 
 Use the interface to add, view, or exit your pantry.
 
-Enter 1 to add cereal
-Enter 2 to view cereals in pantry
-Enter 3 to exit
+Enter "1" to add cereal
+
+Enter "2" to view cereals in pantry
+
+Enter "3" to exit
