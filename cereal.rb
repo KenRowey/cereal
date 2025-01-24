@@ -11,10 +11,5 @@ class Cereal
     "#{@name} #{@ounces} #{@calories}"
   end
 
-  def new
-  end
-
-  def open
-  end
 
 end

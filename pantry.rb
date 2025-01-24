@@ -34,18 +34,18 @@ class Pantry
   private
 
   def add_cereal
-    print "Type cereal name:"
-    name = gets.chomp
-    print "Type the number of ounces the box has:"
+    print "Cereal name: "
+    name = gets.chomp.capitalize
+    print "Number of ounces the box has: "
     ounces = gets.chomp
-    print "Type the number of calories per serving:"
+    print "Number of calories per serving: "
     calories = gets.chomp
     @cereals << Cereal.new(name, ounces, calories)
     puts name + " cereal has been added to the pantry!"
   end
     
   def show_cereal
-    puts "These cereals are in the pantry:"
+    puts "These cereals are in the pantry: "
     @cereals.each do |cereal|
       puts cereal
     end
