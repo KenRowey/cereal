@@ -1,6 +1,6 @@
 require 'minitest/autorun'
-require_relative 'cereal/pantry'
-require_relative 'cereal/cereal'
+require_relative './pantry'
+require_relative './cereal'
 
 class TestPantry < Minitest::Test
   def setup
@@ -9,8 +9,8 @@ class TestPantry < Minitest::Test
 
   def test_add_cereal
     cereal = Cereal.new("cheerios", 12, 110)
-    @pantry.send(:add_cereal_with_input, cereal)
-    assert_equal 1, @pantry.instance_variable_get(:@cereals).size
+    @pantry.send(:test_add_cereal, cereal)
+    assert_equal 1, @pantry.test_variable(:@cereals).size
     assert_equal "cheerios", @pantry.test
   end
 end
