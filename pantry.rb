@@ -24,7 +24,7 @@ class Pantry
         puts "Exting pantry."
         break
       else
-        puts "Invalid entry. Re-enter the corresponding number option"
+        puts "Invalid entry. Re-enter the corresponding number option from 1, 2, or 3."
       end
     end
   end
@@ -45,9 +45,13 @@ class Pantry
   end
     
   def show_cereal
-    puts "These cereals are in the pantry: "
-    @cereals.each do |cereal|
-      puts cereal
+    if @cereals.empty?
+      puts "There are no cereals in the pantry yet."
+    else
+      puts "These cereals are in the pantry: "
+      @cereals.each do |cereal|
+        puts "#{cereal.name}: #{cereal.ounces} ounces, #{cereal.calories} calories"
+      end
     end
   end
 end
