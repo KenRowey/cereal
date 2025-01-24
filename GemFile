@@ -2,6 +2,8 @@ gem install activesupport
 
 source "https://rubygems.org"
 
+gem install minitest
+
 gem "activesupport"
 gem "awesome_print"
 gem "pry-byebug"
